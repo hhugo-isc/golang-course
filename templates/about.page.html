@@ -1,5 +1,8 @@
 {{template "base" .}} {{define "content"}}
 <div class="container mx-auto">
   <h1 class="text-3xl">This is the about page</h1>
+  <p>This is a paragraph of text</p>
+  <p>This is a paragraph of text</p>
+  <p>This came from the template: {{index .StringMap "test"}}</p>
 </div>
 {{end}}
