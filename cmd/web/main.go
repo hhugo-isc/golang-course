@@ -13,6 +13,6 @@ func main() {
 	http.HandleFunc("/", handlers.Home)
 	http.HandleFunc("/about", handlers.About)
 
-	fmt.Printf("Iniciando aplicacion en el puerto %s", PortNumber)
+	fmt.Printf("Iniciando aplicacion en el puerto %s\n\n", PortNumber)
 	_ = http.ListenAndServe(PortNumber, nil)
 }
